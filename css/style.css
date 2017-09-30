@@ -1,8 +1,81 @@
+body{
+	min-width:930px;
+	background-image: url("../img/background-smoke.jpg");
+	background-size: cover;
+}
+
+h1{
+	font-family: 'Pacifico', cursive;
+	font-size: 55px;
+	color: White;
+}
+
+.container {
+
+}
+
+.row{
+    overflow: hidden;
+
+}
+
+.left-side, .right-side {
+	margin-top: 10px;
+	height: 400px;
+	background-size: cover;
+	border-radius: 40px;
+}
+
+#dog-side {
+	background-image: url("../img/dog_side.jpeg");
+
+}
+
+#cat-side {
+	background-image: url("../img/cat_side.jpg");
+}
+
 #board {
   margin-top: 10px;
 }
 
 .box {
   border: 1px solid black;
-  height: 150px;
+  /*height: 100px;
+  width: 100px;*/
+  min-height:133px;
+  min-width:100px;
+  /*background-color: yellow;*/
+  font-size: 60px;
+  font-weight: bold;
+  background-size: cover;
+  background-image: url("../img/dog-v-cat.jpg");
+  /*padding:0;*/
+
+  display: inline-block;
+}
+
+button {
+	white-space: nowrap;
+	font-family: 'Germania One', cursive;
+}
+
+.score-board {
+	text-align: center;
+	font-size: 40px;
+	color: red;
+	font-family: 'Pacifico', cursive;
+}
+
+#dog-win-count {
+
+}
+
+#cat-win-count {
+
+}
+
+#footer {
+	margin-top: 20px;
+	min-height:100px;
 }
