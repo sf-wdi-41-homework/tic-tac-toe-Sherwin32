@@ -115,7 +115,7 @@ $(document).ready(function() {
   		}
 
 	  	if(round===9){
-			alert("Draw!!");
+			draw();
 	  		return true;
 	  	}else{
 	  		return false;
@@ -137,6 +137,13 @@ $(document).ready(function() {
   			break;
   		}
   	}
+  }
+
+  function draw(){
+  	$('.box').addClass('jello');
+  	setTimeout(function(){
+  			$('.box').removeClass('jello');
+  		},1000);
   }
 
   //Restart next game button
@@ -170,7 +177,6 @@ $(document).ready(function() {
   	if(isOver){
   		// gameOver();
   		// restart();
-  		alert("Please click restart button");
   		return;
   	}
   	
