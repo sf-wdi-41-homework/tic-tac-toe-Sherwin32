@@ -3,6 +3,7 @@ $(document).ready(function() {
   // all code to manipulate the DOM
   // goes inside this function
   console.log("I'm in");
+  // why use let instead of var given these variables are global in scope?
   let flag = "dog";
   let round = 0;
   let judge = [];
@@ -55,7 +56,7 @@ $(document).ready(function() {
 	}
 
 
-
+// Very thoughtful, but do we need it?
   function isFinished(){
   	//minimon steps it takes to win the game
   	if(round<5){
